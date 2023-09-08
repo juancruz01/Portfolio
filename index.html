@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- FONT AWESOME-->
@@ -15,34 +18,39 @@
 
     <div id="home" class="content-header">
         <header >
-            <nav class="navbar">
-                
-                    <div class="brand">
-                        <h2>J<span>C</span></h2>
-                    </div>
-                    <div class="menu">
-                        <ul class="lista">
-                            <li>
-                                <a class="nav__link" href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="#about-me">About me</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="#portfolio">Portfolio</a>
-                            </li>
-                            <li>
-                                <a class="nav__link" href="#contactos">Contactos</a>
-                            </li>
-                        </ul>
-                    </div>
-               
-            </nav>
+    
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand brand text-white" href="#">J<span>C</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contactos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
     
         <main class="main">
             <div class="info-content">
-                <h1>Hi! Iam <span>Juan </span>Cruz</h1>
+                <div>
+                    <h1>Hi! I am <span>Juan </span>Cruz</h1>
+                </div>
+                
                 <p>
                     Frontend Developer
                 </p>
@@ -63,99 +71,68 @@
         </main>
     </div>
 
-    <div id="about-me" class="about">
-        <img src="img/about.jpg" alt="juan cruz retrato">
+    <div id="about-me" class=" about row p-3 m-3">
+        <div class="col-lg-6 d-flex justify-content-center align-content-center">
+            <img src="img/foto-perfil.jpg" alt="juan cruz retrato">
+        </div>
         
-        <div class="about-info">
-            <!-- <img src="img/about.jpg" alt="juan cruz retrato"> -->
+        <div class="about-info col-lg-6 d-flex flex-column">
             <h2>Acerca de mi</h2>
             <div class="divider"></div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis illo nisi, dolorem adipisci cupiditate est vero veritatis amet alias nam earum dignissimos quia quisquam, quas soluta excepturi cum error reiciendis!</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora similique ratione, pariatur possimus exercitationem eveniet unde qui expedita aspernatur? Ipsam, aliquam nemo iste voluptate provident culpa animi suscipit earum corrupti.</p>
-            <button class="download-cv">Read more</button>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora similique ratione, pariatur possimus exercitationem eveniet unde qui expedita aspernatur? Ipsam, aliquam nemo iste voluptate provident culpa animi suscipit earum corrupti.</p>
+            <a class="content-links" href="">
+                <button class="download-cv ">Read more</button>
+            </a>
+
         </div>
     </div>
 
     <div id="portfolio" class="portfolio">
-        <div class="portfolio-headings">
+         <div class="portfolio-headings">
             <h2>Mi portfolio</h2>
             <div class="divider"></div>
         </div>
 
-        <div class="conteiner">
-            <div class="card">
-                <div class="card-img">
-                </div>
-                <div class="card-title">
-                    <h2>Project Descrption</h2>
-                </div>
-                <div class="card-project-links">
-                    <a href="">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-globe-americas"></i>
-                    </a>
-                </div>
-                <div class="project-details-content">
-                    <button class="project-details download-cv">
-                        <a href="">
-                            Project details
-                        </a>
-                    </button>
+        <div class="d-flex justify-content-center row">
+            <div class="card col-lg-3 col-sm-12 m-4 h-25" style="width: 18rem;">
+                <img src="img/card-img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Portfolio</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-img">
-                </div>
-                <div class="card-title">
-                    <h2>Project Descrption</h2>
-                </div>
-                <div class="card-project-links">
-                    <a href="">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-globe-americas"></i>
-                    </a>
-                </div>
-                <div class="project-details-content">
-                    <button class="project-details download-cv">
-                        <a href="">
-                            Project details
-                        </a>
-                    </button>
+            <div class="card col-lg-3 col-sm-12 m-4 h-25" style="width: 18rem;">
+                <img src="img/card-img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Landing Page</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-img">
+            <div class="card col-lg-3 col-sm-12 m-4 h-25" style="width: 18rem;">
+                <img src="img/card-img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Blog</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="card-title">
-                    <h2>Project Descrption</h2>
-                </div>
-                <div class="card-project-links">
-                    <a href="">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-globe-americas"></i>
-                    </a>
-                </div>
-                <div class="project-details-content">
-                    <button class="project-details download-cv">
-                        <a href="">
-                            Project details
-                        </a>
-                    </button>
+            </div>
+            <div class="card col-lg-3 col-sm-12 m-3 h-25" style="width: 18rem;">
+                <img src="img/card-img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Restaurant Page</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 
     <div id="contactos" class="contact-section">
-        <div class="contact-headings">
+        <div class="contact-headings d-flex flex-column align-items-center">
             <h2>Contacto</h2>
             <div class="divider"></div>
         </div>
@@ -195,6 +172,6 @@
     </footer>
 
     
-<script src="argprog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
